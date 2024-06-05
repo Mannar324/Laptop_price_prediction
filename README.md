@@ -69,7 +69,7 @@ so i fine tune them using grid search to have more accurate performance
 In this step, I built a streamlit web app that was run on a local device, it requests list of values from user and returns an estimated price.
 
 
-## Demo
+## Screenshot
+main page:
 
-
-[Web app](https://github.com/Mannar324/Laptop_price_prediction/blob/main/webapp.mkv)
+![alt text](https://github.com/Mannar324/Laptop_price_prediction/blob/main/main%20page.png)
