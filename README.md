@@ -46,5 +46,30 @@ and extract from the description the following features:
 
 
 ## EDA Analysis
+I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights:
 
 ![alt text](https://github.com/Mannar324/Laptop_price_prediction/blob/main/EDA%20analysis/newplot.png "price distribution")
+![alt text](https://github.com/Mannar324/Laptop_price_prediction/blob/main/EDA%20analysis/count%20category.png "Category Count")
+![alt text](https://github.com/Mannar324/Laptop_price_prediction/blob/main/EDA%20analysis/pricebercat.png "price ber Category")
+
+
+## Model Building
+First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.   
+
+I tried three different models and evaluated them using Mean Squared Error.
+
+I tried three different models:
+*	**Multiple Linear Regression** – Baseline for the model
+*	**Random Forest Regressor** – Because the ensamble model work effectivly and higher performance.
+*	**XGboost Regressor** – Again, with the sparsity associated with the data, I thought that this would be a good fit. 
+## Model Evaluation
+after experimant i found that the **RandomForest** had the less error in both training and testing 
+so i fine tune them using grid search to have more accurate performance
+## Productionization 
+In this step, I built a streamlit web app that was run on a local device, it requests list of values from user and returns an estimated price.
+
+
+## Demo
+
+
+[Web app](https://github.com/Mannar324/Laptop_price_prediction/blob/main/webapp.mkv)
